@@ -1,6 +1,6 @@
 [{
       "relation": ["delegate_permission/common.handle_all_urls"],
       "target" : { "namespace": "android_app", "package_name": "com.juliushuijnk.test.pwa",
-                   "sha256_cert_fingerprints": ["45:98:6A:63:97:C5:29:F9:85:E6:1E:0B:78:DF:E3:5E:96:D5:27:5A:92:A3:E9:39:79:BD:FD:A2:FF:F3:B4:0E"] }
+                   "sha256_cert_fingerprints": ["3F:7B:73:8B:EF:F8:BC:26:0E:42:F2:32:71:4D:AA:77:13:C3:C8:1A:18:A3:E5:F7:75:35:49:97:D7:90:C9:67"] }
     }
 ]
