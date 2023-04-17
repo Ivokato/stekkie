@@ -31,7 +31,7 @@ function drawUI() {
   let ui = toElement(`
     <div>
       <div class="stackInput">
-        <h2>Add new Stack</p>
+        <h2>Add new stack</p>
         <div class="form-group">
           <input type="text" placeholder="Add a name.." class="form-control"/>
         </div>
