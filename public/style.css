@@ -4,14 +4,39 @@
     padding: 10px;
     margin-bottom: 30px;
     text-align: center;
+
+
 }
 
-.container {
+.stackInput {
+  margin-bottom: 30px;
 }
 
-
-h2 {
+.stack {
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-p {
+.stack .btn[data-action=delete] {
+   position: absolute;
+   top: 16px;
+   right: 16px;
+}
+
+.card {
+  padding: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 32px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card .btn {
+    margin-left: 16px;
 }

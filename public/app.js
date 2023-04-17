@@ -30,10 +30,16 @@ const actions = {
 function drawUI() {
   let ui = toElement(`
     <div>
-      <p>🆕📚</p>
-      <input type="text" placeholder="🆕📚"/>
-      <h2>📚📚:</h2>
-      <div id="stacks"></div>
+      <div class="stackInput">
+        <h2>Add new Stack</p>
+        <div class="form-group">
+          <input type="text" placeholder="Add a name.." class="form-control"/>
+        </div>
+      </div>
+      <div>
+        <h2>📚 Stacks</h2>
+        <div id="stacks"></div>
+      </div>
     </div>
   `);
 
@@ -99,25 +105,27 @@ function drawUI() {
     for (const {name, cards: cardIds} of stacks) {
       const {length} = cardIds;
       const caption = length && cards[cardIds.at(-1)].caption;
-      str += `<div data-stack-name="${name}">
-        <h2>📚 ${name} (${length} 💳)</h2>
-        <p>
-          <input data-stack-name="${name}" placeholder="🆕💳"/>
-        </p>
+      str += `<div data-stack-name="${name}" class="stack">
+        <h2>${name} (${length})</h2>
+        <button data-stack-name="${name}" data-action="delete" class="btn btn-secondary">Remove stack</button>
+        <div class="form-group">
+          <input data-stack-name="${name}" placeholder="New card.." class="form-control"/>
+        </div>
         ${length ? (`
-          <h3>Current 💳:</h3>
-          <p>${caption}</p>
-          <h3>Actions</h3>
-          <ul>
-            <li><button data-stack-name="${name}" data-action="finish">✅</button></li>
-            <li><button data-stack-name="${name}" data-action="postpone">🔻</button></li>
-          </ul>
-        `) : ''}
+        <div class="card row">
+          <h3>${caption}</h3>
+          <div class="row buttons">
+            <button data-stack-name="${name}" data-action="finish" class="btn btn-primary">Done ✅</button>
+            <button data-stack-name="${name}" data-action="postpone" class="btn btn-secondary">Postpone 🔻</button>
+          </div>
+        </div>
+        `) : '<p class="text-muted">Please add a card.</p>'}
       </div>`;
     }
-
-    stacksContainer.innerHTML = str;
+    stacksContainer.innerHTML = str || '<p class="text-muted">Stack underflow. Please add a stack</p>';
   };
+
+  updateUI();
 }
 
 drawUI();
