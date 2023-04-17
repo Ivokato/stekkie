@@ -19,7 +19,7 @@ let button;
 
 function showInstallPromotion() {
   const prompt = toElement(`
-    <div style="position: absolute; top: 0; right: 0; padding: 0.5rem 3rem; border: 2px solid grey;">
+    <div style="position: absolute; top: 0; right: 0; padding: 0.5rem 3rem; border: 2px solid grey; background-color: white">
       <p>PWA installeren?</p>
       <button>Install</button>
     </div>

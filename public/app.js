@@ -1,7 +1,7 @@
 import {toElement} from './lib.js';
 
-const stacks = [];
-const cards = {};
+const stacks = localStorage.getItem('stacks') && JSON.parse(localStorage.getItem('stacks')) || [];
+const cards = localStorage.getItem('cards') && JSON.parse(localStorage.getItem('cards')) || {};
 const finishedCards = [];
 
 let updateUI;
@@ -16,6 +16,11 @@ function getStack(stackName) {
   return stacks.find(({name}) => name === stackName);
 }
 
+function persist() {
+  localStorage.setItem('stacks', JSON.stringify(stacks));
+  localStorage.setItem('cards', JSON.stringify(cards));
+}
+
 const actions = {
   finish: stack => {
     const cardId = stack.cards.at(-1);
@@ -24,6 +29,9 @@ const actions = {
   },
   postpone: stack => {
     stack.cards.unshift(stack.cards.pop());
+  },
+  delete: stack => {
+    stacks.splice(stacks.indexOf(stack), 1);
   },
 };
 
@@ -50,7 +58,7 @@ function drawUI() {
 
   // Handle creating new cards
   stacksContainer.addEventListener('keyup', event => {
-    if (event.target.matches('input[data-stack-name]') && event.keyCode === 13) {
+    if (event.target.matches('input[data-stack-name]') && event.keyCode === 13 && event.target.value) {
       const {
         value,
         dataset: {stackName}
@@ -67,6 +75,7 @@ function drawUI() {
 
       getStack(stackName).cards.push(card.id);
 
+      persist();
       updateUI();
     }
   });
@@ -81,20 +90,22 @@ function drawUI() {
       const stack = getStack(stackName);
 
       actions[action](stack);
+      persist();
       updateUI();
     }
   });
 
   // Handle creating new stacks
   input.addEventListener('keyup', event => {
-    if (event.keyCode === 13) {
+    if (event.keyCode === 13 && event.target.value) {
       stacks.push({
-        name: input.value,
+        name: event.target.value,
         cards: [],
       });
 
       event.target.value = '';
 
+      persist();
       updateUI();
     }
   });
@@ -122,7 +133,7 @@ function drawUI() {
         `) : '<p class="text-muted">Please add a card.</p>'}
       </div>`;
     }
-    stacksContainer.innerHTML = str || '<p class="text-muted">Stack underflow. Please add a stack</p>';
+    stacksContainer.innerHTML = str || '<p class="text-muted">Stack underflow. Please add a stack.</p>';
   };
 
   updateUI();
