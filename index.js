@@ -18,7 +18,7 @@ router.get('/', ctx => {
 });
 
 app
-.use(serve('./public'))
+.use(serve('./public', {hidden: true}))
 .use(router.routes())
 .use(router.allowedMethods());
 
