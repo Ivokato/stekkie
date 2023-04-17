@@ -1,5 +1,6 @@
 {
   "name": "PWA-Test",
+  "short_name": "PWA-T",
   "description": "This is just a test",
   "start_url": "/",
   "lang": "en-US",
@@ -15,7 +16,7 @@
       "src": "/testIcon512x512.png",
       "sizes": "512x512",
       "type": "image/png"
-  }
+    }
   ],
   "screenshots": [
     {
