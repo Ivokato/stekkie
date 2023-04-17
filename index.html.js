@@ -2,7 +2,7 @@ export default `<!DOCTYPE html>
 <html lang="nl" dir="ltr">
 <head>
   <link rel="manifest" href="manifest.json">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="application-name" content="PWA-Test">
@@ -23,7 +23,10 @@ export default `<!DOCTYPE html>
   <link rel="stylesheet" media="all" href="/style.css"/>
 </head>
 <body>
-  <h1>Stekkie</h1>
+  <div class="topbar">
+   <h1>Stekkie</h1>
+  </div>
+  <div class="container"></div>
   <script type="module" src="/pwa.js"></script>
   <script type="module" src="/app.js"></script>
 </body>

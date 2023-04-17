@@ -37,7 +37,7 @@ function drawUI() {
     </div>
   `);
 
-  document.body.appendChild(ui);
+  document.body.querySelector('.container').appendChild(ui);
 
   const input = ui.querySelector('input');
   const stacksContainer = ui.querySelector('#stacks');
