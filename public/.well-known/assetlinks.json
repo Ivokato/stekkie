@@ -1,6 +1,6 @@
 [{
-        "relation": ["delegate_permission/common.handle_all_urls"],
-        "target" : { "namespace": "android_app", "package_name": "com.juliushuijnk.test.pwa",
-                     "sha256_cert_fingerprints": ["BA:2B:B8:13:CF:2F:E4:90:94:1D:8E:32:05:D5:1C:87:1A:DC:5E:EF:9A:BC:49:B5:D7:20:0B:CC:E2:94:4F:48"] }
-      }
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "com.juliushuijnk.test.pwa",
+                   "sha256_cert_fingerprints": ["45:98:6A:63:97:C5:29:F9:85:E6:1E:0B:78:DF:E3:5E:96:D5:27:5A:92:A3:E9:39:79:BD:FD:A2:FF:F3:B4:0E"] }
+    }
 ]
