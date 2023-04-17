@@ -8,7 +8,7 @@ export default `<!DOCTYPE html>
   <link rel="stylesheet" media="all" href="/style.css"/>
 </head>
 <body>
-  <main>{{content}}</main>
+  <main>Dit is die {{content}}</main>
 </body>
 </html>
 `;
