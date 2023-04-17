@@ -3,6 +3,7 @@
   "short_name": "PWA-T",
   "description": "This is just a test",
   "start_url": "/",
+  "scope": "/",
   "lang": "en-US",
   "theme_color": "#123456",
   "display": "standalone",
