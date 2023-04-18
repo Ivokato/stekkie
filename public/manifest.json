@@ -6,7 +6,24 @@
   "scope": "/",
   "lang": "en-US",
   "theme_color": "#123456",
+  "background_color": "#ffffff",
   "display": "standalone",
+  "orientation": "any",
+  "categories": [
+    "utilities",
+    "productivity"
+  ],
+  "shortcuts" : [
+    {
+      "name": "Stekkie overview",
+      "url": "/",
+      "description": "View and update stacks with their tasks."
+    },
+    {
+      "name": "Privacy policy",
+      "url": "/privacy-policy"
+    }
+  ],
   "icons": [
     {
       "src": "/icon192x192.png",
