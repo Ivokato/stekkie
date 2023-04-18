@@ -19,9 +19,9 @@ let prompt;
 
 function showInstallPromotion() {
   prompt = toElement(`
-    <div style="position: absolute; top: 0; right: 0; padding: 0.5rem 3rem; border: 2px solid grey; background-color: white">
-      <p>PWA installeren?</p>
-      <button>Install</button>
+    <div style="padding: 1rem 3rem; border: 1px solid white; color: white; background-color: #123456">
+      <p>Focus even more and install Stekkie to your device.</p>
+      <button class="btn btn-light">Install</button>
     </div>
   `);
 

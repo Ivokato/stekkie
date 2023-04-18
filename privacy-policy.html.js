@@ -41,7 +41,7 @@ export default `<!DOCTYPE html>
         <small class="text-muted">Stekkie helps you focus. Put interupting tasks on the stack. Once completed, continue where you left off.</small>
       </div>
       <div>
-        <small class="text-muted">Send feedback to ivo@fitchef.nl | <a href="/" style="color: black">back to app</a></small>
+        <small class="text-muted">Send feedback to ivo+stekkie@fitchef.nl | <a href="/" style="color: black">back to app</a></small>
       </div>
     </footer>
   </div>
