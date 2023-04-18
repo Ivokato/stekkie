@@ -26,7 +26,7 @@ export default `<!DOCTYPE html>
   <div class="topbar">
    <h1>Stekkie</h1>
       <small>
-        Focus on the task add hand
+        Focus on the task at hand
       </small>
   </div>
   <div class="container"></div>
