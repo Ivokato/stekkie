@@ -125,8 +125,8 @@ function drawUI() {
         <div class="card row">
           <h3>${caption}</h3>
           <div class="row buttons">
-            ${length > 1 ? `<button data-stack-name="${name}" data-action="postpone" class="btn btn-light">postpone <small class="icon">↧</small></button>` : ''}
-            <button data-stack-name="${name}" data-action="finish" class="btn btn-success">done <small class="icon">✓</small></button>
+            ${length > 1 ? `<button data-stack-name="${name}" data-action="postpone" class="btn btn-light">postpone <span class="icon">↧</span></button>` : ''}
+            <button data-stack-name="${name}" data-action="finish" class="btn btn-success">done <span class="icon">✓</span></button>
           </div>
         </div>
         `) : '<p class="text-muted">No tasks on this stack..</p>'}
