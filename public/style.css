@@ -19,7 +19,6 @@
 }
 
 .stack .btn[data-action=delete] {
-  position: absolute;
   top: 12px;
   right: 16px;
 }
@@ -51,6 +50,34 @@ h1 {
   margin-bottom: 0;
 }
 
+h2 {
+  font-weight: lighter;
+}
+
 .icon {
   margin-left: 4px;
+}
+
+.buttons {
+  max-width: fit-content;
+  flex: 0;
+  flex-basis: content; 
+  padding-right: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: fit-content;
+}
+
+.task-button {
+  min-width: 8rem;
+}
+
+@media (max-width: 768px) { 
+  .task-button:last-child {
+    margin-bottom: 10px;
+  }
+  .buttons {
+    flex-basis: min-content; 
+    flex-direction: column-reverse;
+  }
 }

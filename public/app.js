@@ -116,20 +116,22 @@ function drawUI() {
       const {length} = cardIds;
       const caption = length && cards[cardIds.at(-1)].caption;
       str += `<div data-stack-name="${name}" class="stack">
-        <h3>${name} (${length})</h3>
-        <button data-stack-name="${name}" data-action="delete" class="btn btn-light">remove stack <small class="icon">❌</small></button>
-        <div class="form-group">
-          <input data-stack-name="${name}" placeholder="Write down your task.." class="form-control" autocapitalize="on"/>
+        <div class="d-flex justify-content-between mb-3">
+          <h3>${name} (${length})</h3>
+          <button data-stack-name="${name}" data-action="delete" class="btn btn-light">remove stack <span class="icon">×</span></button>
+        </div>
+        <div class="form-group mb-3">
+          <input data-stack-name="${name}" placeholder="Write your task.." class="form-control" autocapitalize="on"/>
         </div>
         ${length ? (`
         <div class="card row">
-          <h2>${caption}</h2>
-          <div class="row buttons">
-            ${length > 1 ? `<button data-stack-name="${name}" data-action="postpone" class="btn btn-light">postpone <span class="icon">↧</span></button>` : ''}
-            <button data-stack-name="${name}" data-action="finish" class="btn btn-success">done <span class="icon">✓</span></button>
+          <h2 class="col">${caption}</h2>
+          <div class="buttons">
+            ${length > 1 ? `<button data-stack-name="${name}" data-action="postpone" class="btn btn-light task-button">postpone <span class="icon">↧</span></button>` : ''}
+            <button data-stack-name="${name}" data-action="finish" class="btn btn-success task-button">done <span class="icon">✓</span></button>
           </div>
         </div>
-        `) : '<p class="text-muted">No tasks on this stack..</p>'}
+        `) : '<div class="text-muted">No tasks on this stack..</div>'}
       </div>`;
     }
     stacksContainer.innerHTML = str || '<p class="text-muted">Stack underflow. Please add a stack.</p>';

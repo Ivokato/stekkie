@@ -2,7 +2,6 @@ export default `<!DOCTYPE html>
 <html lang="nl" dir="ltr">
 <head>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="application-name" content="Stekkie">
@@ -20,6 +19,7 @@ export default `<!DOCTYPE html>
   <meta charset="utf-8"/>
   <meta name="MobileOptimized" content="width"/>
   <meta name="HandheldFriendly" content="true"/>
+  <link rel="stylesheet" media="all" href="/bootstrap5.3.0.css"/>
   <link rel="stylesheet" media="all" href="/style.css"/>
 </head>
 <body>
