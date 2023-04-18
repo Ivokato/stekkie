@@ -117,7 +117,7 @@ function drawUI() {
       const caption = length && cards[cardIds.at(-1)].caption;
       str += `<div data-stack-name="${name}" class="stack">
         <h2>${name} (${length})</h2>
-        <button data-stack-name="${name}" data-action="delete" class="btn btn-light">remove stack <small style="margin-left: 4px">❌</small></button>
+        <button data-stack-name="${name}" data-action="delete" class="btn btn-light">remove stack <small class="icon">❌</small></button>
         <div class="form-group">
           <input data-stack-name="${name}" placeholder="Write down your task.." class="form-control" autocapitalize="on"/>
         </div>
@@ -125,8 +125,8 @@ function drawUI() {
         <div class="card row">
           <h3>${caption}</h3>
           <div class="row buttons">
-            ${length > 1 ? `<button data-stack-name="${name}" data-action="postpone" class="btn btn-light">postpone 🔻</button>` : ''}
-            <button data-stack-name="${name}" data-action="finish" class="btn btn-success">done ✅</button>
+            ${length > 1 ? `<button data-stack-name="${name}" data-action="postpone" class="btn btn-light">postpone <small class="icon">↧</small></button>` : ''}
+            <button data-stack-name="${name}" data-action="finish" class="btn btn-success">done <small class="icon">✓</small></button>
           </div>
         </div>
         `) : '<p class="text-muted">No tasks on this stack..</p>'}
