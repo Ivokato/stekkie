@@ -30,7 +30,7 @@ export default `<!DOCTYPE html>
     </a>
   </div>
   <div class="container" style="flex: 1">
-    <h2>Stekkie privacy policy</h2>
+    <h2 class="mb-3">Stekkie privacy policy</h2>
     <p>All the data (stacks, tasks) are only stored on your device.</p>
     <p>Stekkie does not collect or store any private data.</p>
   </div>
@@ -41,7 +41,7 @@ export default `<!DOCTYPE html>
         <small class="text-muted">Stekkie helps you focus. Put interupting tasks on the stack. Once completed, continue where you left off.</small>
       </div>
       <div>
-        <small class="text-muted">Send feedback to ivo@fitchef.nl | <a href="/">Back to app</a></small>
+        <small class="text-muted">Send feedback to ivo@fitchef.nl | <a href="/" style="color: black">back to app</a></small>
       </div>
     </footer>
   </div>

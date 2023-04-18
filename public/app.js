@@ -124,7 +124,7 @@ function drawUI() {
         </div>
         ${length ? (`
         <div class="card row" style="padding-right: 16px;">
-          <h2 class="col">${caption}</h2>
+          <div class="col task-title">${caption}</div>
           <div class="buttons">
             ${length > 1 ? `<button data-stack-name="${name}" data-action="postpone" class="btn btn-light task-button">postpone <span class="icon">↧</span></button>` : ''}
             <button data-stack-name="${name}" data-action="finish" class="btn btn-success task-button">done <span class="icon">✓</span></button>

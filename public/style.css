@@ -49,13 +49,6 @@ h1 {
   margin-bottom: 0;
 }
 
-h2 {
-  font-weight: lighter;
-}
-
-h2.col {
-  padding-left: 0;
-}
 
 .icon {
   margin-left: 4px;
@@ -73,6 +66,12 @@ h2.col {
 
 .task-button {
   min-width: 8rem;
+}
+
+.task-title {
+  font-size: 2rem;
+  font-weight: lighter;
+  padding-left: 0;
 }
 
 @media (max-width: 768px) { 
