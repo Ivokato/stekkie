@@ -129,7 +129,7 @@ function drawUI() {
             <button data-stack-name="${name}" data-action="finish" class="btn btn-success">Done ✅</button>
           </div>
         </div>
-        `) : '<p class="text-muted">No cards on this stack..</p>'}
+        `) : '<p class="text-muted">No tasks on this stack..</p>'}
       </div>`;
     }
     stacksContainer.innerHTML = str || '<p class="text-muted">Stack underflow. Please add a stack.</p>';
