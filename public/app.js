@@ -6,7 +6,7 @@ const finishedCards = [];
 
 let updateUI;
 
-let lastId = Math.max(0, ...Object.keys(cards).map(Number)) - 1;
+let lastId = Math.max(-1, ...Object.keys(cards).map(Number));
 
 function createId() {
   return lastId = lastId + 1;
