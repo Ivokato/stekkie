@@ -20,7 +20,7 @@ let prompt;
 function showInstallPromotion() {
   prompt = toElement(`
     <div style="padding: 1rem 3rem; border: 1px solid white; color: white; background-color: #123456">
-      <p>Focus even more and install Stekkie to your device.</p>
+      <p>Focus even more and install Stekkie on your device.</p>
       <button class="btn btn-light">Install</button>
     </div>
   `);
