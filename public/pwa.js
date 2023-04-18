@@ -15,10 +15,10 @@ if ('serviceWorker' in navigator) {
 // Initialize deferredPrompt for use later to show browser install prompt.
 let deferredPrompt;
 
-let button;
+let prompt;
 
 function showInstallPromotion() {
-  const prompt = toElement(`
+  prompt = toElement(`
     <div style="position: absolute; top: 0; right: 0; padding: 0.5rem 3rem; border: 2px solid grey; background-color: white">
       <p>PWA installeren?</p>
       <button>Install</button>
@@ -43,7 +43,7 @@ function showInstallPromotion() {
 }
 
 function hideInstallPromotion() {
-  button.parentNode.removeChild(button);
+  prompt.remove();
 }
 
 window.addEventListener('beforeinstallprompt', e => {
