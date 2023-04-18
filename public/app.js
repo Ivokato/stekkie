@@ -41,7 +41,7 @@ function drawUI() {
       <h2>📚 Stacks</h2>
       <div class="stackInput">
         <div class="form-group">
-          <input type="text" placeholder="Add a new stack.." class="form-control"/>
+          <input type="text" placeholder="Add a new stack.." class="form-control" autocapitalize="on"/>
         </div>
       </div>
       <div>
@@ -119,7 +119,7 @@ function drawUI() {
         <h2>${name} (${length})</h2>
         <button data-stack-name="${name}" data-action="delete" class="btn btn-light">remove stack <small style="margin-left: 4px">❌</small></button>
         <div class="form-group">
-          <input data-stack-name="${name}" placeholder="Write down your task.." class="form-control"/>
+          <input data-stack-name="${name}" placeholder="Write down your task.." class="form-control" autocapitalize="on"/>
         </div>
         ${length ? (`
         <div class="card row">
