@@ -38,10 +38,9 @@ const actions = {
 function drawUI() {
   let ui = toElement(`
     <div>
-      <h2>📚 Stacks</h2>
       <div class="stackInput">
-        <div class="form-group">
-          <input type="text" placeholder="Add a new stack.." class="form-control" autocapitalize="on"/>
+        <div class="form-group d-flex">
+          <span class="d-flex align-self-center pe-3">📚</span><input type="text" placeholder="Add a new stack.." class="form-control" autocapitalize="on"/>
         </div>
       </div>
       <div>
@@ -115,16 +114,16 @@ function drawUI() {
     for (const {name, cards: cardIds} of stacks) {
       const {length} = cardIds;
       const caption = length && cards[cardIds.at(-1)].caption;
-      str += `<div data-stack-name="${name}" class="stack">
+      str += `<div data-stack-name="${name}" class="stack mb-3">
         <div class="d-flex justify-content-between mb-3">
-          <h3>${name} (${length})</h3>
+          <h3>${name} ${length > 1 ? ` <span class="text-black-50 ps-1 pe-1">|</span> ${length}` : ``}</h3>
           <button data-stack-name="${name}" data-action="delete" class="btn btn-light">remove stack <span class="icon">×</span></button>
         </div>
         <div class="form-group mb-3">
           <input data-stack-name="${name}" placeholder="Write your task.." class="form-control" autocapitalize="on"/>
         </div>
         ${length ? (`
-        <div class="card row">
+        <div class="card row" style="padding-right: 16px;">
           <h2 class="col">${caption}</h2>
           <div class="buttons">
             ${length > 1 ? `<button data-stack-name="${name}" data-action="postpone" class="btn btn-light task-button">postpone <span class="icon">↧</span></button>` : ''}

@@ -22,24 +22,22 @@ export default `<!DOCTYPE html>
   <link rel="stylesheet" media="all" href="/bootstrap5.3.0.css"/>
   <link rel="stylesheet" media="all" href="/style.css"/>
 </head>
-<body>
+<body style="min-height:100vh; flex-direction: column; display: flex">
   <div class="topbar">
     <a href="/" style="text-decoration: none; color: white;">
       <h1>Stekkie</h1>
-      <small>
-        Focus on the task at hand
-      </small>
+      <small>Focus on the task at hand</small>
     </a>
   </div>
-  <div class="container">
-  <h2>Stekkie privacy policy</h2>
-  <p>All the data (stacks, tasks) are only stored on your device.</p>
-  <p>Stekkie does not collect or store any private data.</p>
+  <div class="container" style="flex: 1">
+    <h2>Stekkie privacy policy</h2>
+    <p>All the data (stacks, tasks) are only stored on your device.</p>
+    <p>Stekkie does not collect or store any private data.</p>
   </div>
   <hr />
   <div class="container">
     <footer>
-      <div>
+      <div class="pb-3">
         <small class="text-muted">Stekkie helps you focus. Put interupting tasks on the stack. Once completed, continue where you left off.</small>
       </div>
       <div>

@@ -22,18 +22,16 @@ export default `<!DOCTYPE html>
   <link rel="stylesheet" media="all" href="/bootstrap5.3.0.css"/>
   <link rel="stylesheet" media="all" href="/style.css"/>
 </head>
-<body>
+<body style="min-height:100vh; flex-direction: column; display: flex">
   <div class="topbar">
-   <h1>Stekkie</h1>
-      <small>
-        Focus on the task at hand
-      </small>
+    <h1>Stekkie</h1>
+    <small>Focus on the task at hand</small>
   </div>
-  <div class="container"></div>
+  <div class="container" style="flex: 1"></div>
   <hr />
   <div class="container">
     <footer>
-      <div>
+      <div class="pb-3">
         <small class="text-muted">Stekkie helps you focus. Put interupting tasks on the stack. Once completed, continue where you left off.</small>
       </div>
       <div>
