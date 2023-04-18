@@ -38,14 +38,13 @@ const actions = {
 function drawUI() {
   let ui = toElement(`
     <div>
+      <h2>📚 Stacks</h2>
       <div class="stackInput">
-        <h2>Add stack</p>
         <div class="form-group">
-          <input type="text" placeholder="Name your stack.." class="form-control"/>
+          <input type="text" placeholder="Add a new stack.." class="form-control"/>
         </div>
       </div>
       <div>
-        <h2>📚 Stacks</h2>
         <div id="stacks"></div>
       </div>
     </div>
@@ -120,17 +119,17 @@ function drawUI() {
         <h2>${name} (${length})</h2>
         <button data-stack-name="${name}" data-action="delete" class="btn btn-secondary">Remove stack</button>
         <div class="form-group">
-          <input data-stack-name="${name}" placeholder="Name your task.." class="form-control"/>
+          <input data-stack-name="${name}" placeholder="Write down your task.." class="form-control"/>
         </div>
         ${length ? (`
         <div class="card row">
           <h3>${caption}</h3>
           <div class="row buttons">
-            <button data-stack-name="${name}" data-action="finish" class="btn btn-primary">Done ✅</button>
-            <button data-stack-name="${name}" data-action="postpone" class="btn btn-secondary">Postpone 🔻</button>
+            <button data-stack-name="${name}" data-action="postpone" class="btn btn-light">Postpone 🔻</button>
+            <button data-stack-name="${name}" data-action="finish" class="btn btn-success">Done ✅</button>
           </div>
         </div>
-        `) : '<p class="text-muted">Please add a card.</p>'}
+        `) : '<p class="text-muted">No cards on this stack..</p>'}
       </div>`;
     }
     stacksContainer.innerHTML = str || '<p class="text-muted">Stack underflow. Please add a stack.</p>';
