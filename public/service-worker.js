@@ -1,4 +1,4 @@
-const cacheName = 'cache-v3';
+const cacheName = 'cache-v4';
 
 const resources = [
   '/',
@@ -7,6 +7,7 @@ const resources = [
   '/pwa.js',
   '/style.css',
   '/app.js',
+  '/bootstrap5.3.0.css',
 ];
 
 self.addEventListener('install', event => {
