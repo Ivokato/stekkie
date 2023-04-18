@@ -3,6 +3,7 @@ import Router from 'koa-router';
 import serve from 'koa-static';
 
 import indexHtml from './index.html.js';
+import privacyPolicyHtml from './privacy-policy.html.js';
 
 const router = new Router();
 
@@ -15,6 +16,10 @@ app.keys = ['one key'];
 
 router.get('/', ctx => {
   ctx.body = indexHtml;
+});
+
+router.get('/privacy-policy', ctx => {
+  ctx.body = privacyPolicyHtml;
 });
 
 app

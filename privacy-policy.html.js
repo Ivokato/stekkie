@@ -12,7 +12,7 @@ export default `<!DOCTYPE html>
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="msapplication-starturl" content="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Stekkie</title>
+  <title>Stekkie Privacy Policy</title>
 
   <link rel="icon" type="image/png" sizes="192x192" href="/testIcon.png">
   <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/testIcon.png">
@@ -24,12 +24,18 @@ export default `<!DOCTYPE html>
 </head>
 <body>
   <div class="topbar">
-   <h1>Stekkie</h1>
+    <a href="/" style="text-decoration: none; color: white;">
+      <h1>Stekkie</h1>
       <small>
         Focus on the task at hand
       </small>
+    </a>
   </div>
-  <div class="container"></div>
+  <div class="container">
+  <h2>Stekkie privacy policy</h2>
+  <p>All the data (stacks, tasks) are only stored on your device.</p>
+  <p>Stekkie does not collect or store any private data.</p>
+  </div>
   <hr />
   <div class="container">
     <footer>
@@ -37,12 +43,10 @@ export default `<!DOCTYPE html>
         <small class="text-muted">Stekkie helps you focus. Put interupting tasks on the stack. Once completed, continue where you left off.</small>
       </div>
       <div>
-        <small class="text-muted">Send feedback to ivo@fitchef.nl | <a href="/privacy-policy">Privacy policy</a></small>
+        <small class="text-muted">Send feedback to ivo@fitchef.nl | <a href="/">Back to app</a></small>
       </div>
     </footer>
   </div>
-  <script type="module" src="/pwa.js"></script>
-  <script type="module" src="/app.js"></script>
 </body>
 </html>
 `;
