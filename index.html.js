@@ -25,8 +25,22 @@ export default `<!DOCTYPE html>
 <body>
   <div class="topbar">
    <h1>Stekkie</h1>
+      <small>
+        Focus on the task add hand
+      </small>
   </div>
   <div class="container"></div>
+  <hr />
+  <div class="container">
+    <footer>
+      <div>
+        <small class="text-muted">Stekkie helps you focus. Put interupting tasks on the stack. Once completed, continue where you left off.</small>
+      </div>
+      <div>
+        <small class="text-muted">Send feedback to ivo@fitchef.nl</small>
+      </div>
+    </footer>
+  </div>
   <script type="module" src="/pwa.js"></script>
   <script type="module" src="/app.js"></script>
 </body>

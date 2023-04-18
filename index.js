@@ -23,4 +23,4 @@ app
 .use(router.allowedMethods());
 
 app.listen(PORT);
-console.log(`test-pwa listening at ${PORT}`);
+console.log(`Stekkie listening at ${PORT}`);

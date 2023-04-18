@@ -39,9 +39,9 @@ function drawUI() {
   let ui = toElement(`
     <div>
       <div class="stackInput">
-        <h2>Add new stack</p>
+        <h2>Add stack</p>
         <div class="form-group">
-          <input type="text" placeholder="Add a name.." class="form-control"/>
+          <input type="text" placeholder="Name your stack.." class="form-control"/>
         </div>
       </div>
       <div>
@@ -120,7 +120,7 @@ function drawUI() {
         <h2>${name} (${length})</h2>
         <button data-stack-name="${name}" data-action="delete" class="btn btn-secondary">Remove stack</button>
         <div class="form-group">
-          <input data-stack-name="${name}" placeholder="New card.." class="form-control"/>
+          <input data-stack-name="${name}" placeholder="Name your task.." class="form-control"/>
         </div>
         ${length ? (`
         <div class="card row">
