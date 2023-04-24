@@ -4,9 +4,7 @@ PORT=3001 npm start
 
 # Release update
 
-Push to master will automatically update.
-
-https://stekkie.herokuapp.com
+Push to 'main' branch will automatically update https://stekkie.herokuapp.com
 
 # Build for Android / iOS
 
