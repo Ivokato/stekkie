@@ -3,4 +3,5 @@ node_modules
 .idea
 
 # Keystore for android release should not be part of the (public) repo.
-*.jks
+*.keystore
+signing-key-info.txt

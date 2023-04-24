@@ -16,3 +16,8 @@ https://www.pwabuilder.com
   - Locally 'adb install' 
     adb install -r ./PWA-T.apk
   - Upload online via Google Developer Console website.
+
+# Android keystore
+
+The keystore is created via pwabuilder.com,
+It is a secret that should not be part of the repo.
