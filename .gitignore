@@ -1,3 +1,6 @@
 node_modules
 .DS_Store
 .idea
+
+# Keystore for android release should not be part of the (public) repo.
+*.jks
