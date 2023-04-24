@@ -13,7 +13,7 @@
     "relation": [ "delegate_permission/common.handle_all_urls" ],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.your.package_name",
+      "package_name": "nl.fitchef.stekkie",
       "sha256_cert_fingerprints": [
         "3A:3E:9C:E4:CF:23:DD:4D:5F:8F:34:1C:48:68:FD:B3:E6:BD:D0:7C:35:06:F8:5F:21:7E:8E:FF:24:6D:F0:72"
       ]
