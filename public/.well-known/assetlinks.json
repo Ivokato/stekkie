@@ -5,16 +5,7 @@
       "namespace": "android_app",
       "package_name": "nl.fitchef.stekkie",
       "sha256_cert_fingerprints": [
-        "7A:76:34:92:E5:37:BD:C7:F9:6D:4E:99:92:3C:B3:12:FA:ED:BC:BE:BC:63:44:AA:70:E9:D9:7B:CC:FA:90:5C"
-      ]
-    }
-  },
-  {
-    "relation": [ "delegate_permission/common.handle_all_urls" ],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "nl.fitchef.stekkie",
-      "sha256_cert_fingerprints": [
+        "7A:76:34:92:E5:37:BD:C7:F9:6D:4E:99:92:3C:B3:12:FA:ED:BC:BE:BC:63:44:AA:70:E9:D9:7B:CC:FA:90:5C",
         "3A:3E:9C:E4:CF:23:DD:4D:5F:8F:34:1C:48:68:FD:B3:E6:BD:D0:7C:35:06:F8:5F:21:7E:8E:FF:24:6D:F0:72"
       ]
     }
