@@ -6,6 +6,8 @@ For each context there is a stack of tasks, you get to see the top task. You can
 
 It's a Progressive Web App (PWA), so basically a website with some mobile app capabilities. The main advantage is that it keeps working while you are offline.
 
+![Stekkie icon](public/icon192x192.png "Stekkie icon")
+
 # Download the app
 
 - Google Play store: https://play.google.com/store/apps/details?id=nl.fitchef.stekkie
@@ -41,3 +43,6 @@ https://www.pwabuilder.com
 The keystore is created via pwabuilder.com,
 It is a secret that should not be part of the repo.
 
+# Screenshot
+
+![Stekkie screenshot](public/screenshot.png "Stekkie screenshot")
