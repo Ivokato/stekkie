@@ -35,7 +35,7 @@ export default `<!DOCTYPE html>
         <small class="text-muted">Stekkie helps you focus. Put interrupting tasks on the stack. Once completed, continue where you left off.</small>
       </div>
       <div>
-        <small class="text-muted">Send feedback to ivo@fitchef.nl | <a href="/privacy-policy" style="color: black" alt="privacy policy">privacy policy</a></small>
+        <small class="text-muted">Send feedback to ivo+stekkie@fitchef.nl | <a href="/privacy-policy" style="color: black" alt="privacy policy">privacy policy</a></small>
       </div>
     </footer>
   </div>
