@@ -12,7 +12,7 @@ const resources = [
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(cacheName).then(cache => Promise.all(resources.map(url => cache.add(url))))
+    caches.open(cacheName).then(cache => cache.addAll(resources))
   );
 });
 

@@ -25,7 +25,7 @@ export default `<!DOCTYPE html>
 <body style="min-height:100vh; flex-direction: column; display: flex">
   <div class="topbar">
     <h1>Stekkie</h1>
-    <small>Focus on the task at hand</small>
+    <small>Focus on THE STEEK at hand</small>
   </div>
   <div class="container" style="flex: 1"></div>
   <hr />

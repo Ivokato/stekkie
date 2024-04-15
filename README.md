@@ -15,7 +15,13 @@ It's a Progressive Web App (PWA), so basically a website with some mobile app ca
 
 # Run locally
 
-PORT=3001 npm start
+Run in the terminal in the root of this project: 
+
+  PORT=3001 npm start
+
+In the browser go to:
+
+  http://localhost:3001
 
 # Feedback
 

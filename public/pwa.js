@@ -1,5 +1,7 @@
 import {toElement} from './lib.js';
 
+console.log("PWA loading..");
+
 if ('serviceWorker' in navigator) {
   // Register a service worker hosted at the root of the
   // site using the default scope.
